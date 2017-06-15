@@ -10,19 +10,44 @@ body {
   justify-content: center; }
   /* line 11, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
   body #wrapper {
-    width: 70%;
+    display: flex;
+    width: 80%;
     background-color: #F0F3BD; }
-    /* line 17, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-    body #wrapper header #headerCont {
-      display: flex;
-      justify-content: space-between;
-      padding: 0.5em; }
-    /* line 22, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-    body #wrapper header img {
-      width: 100%; }
-    /* line 26, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-    body #wrapper header nav {
-      display: flex;
-      justify-content: space-around; }
+    /* line 16, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+    body #wrapper header {
+      width: 85%; }
+      /* line 19, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+      body #wrapper header #headerCont {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em; }
+        /* line 26, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+        body #wrapper header #headerCont #headerCart a {
+          font-family: 'Open Sans', sans-serif; }
+      /* line 31, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+      body #wrapper header img {
+        width: 100%; }
+      /* line 35, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+      body #wrapper header nav {
+        display: flex;
+        justify-content: space-around; }
+        /* line 39, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+        body #wrapper header nav a {
+          font-family: 'Open Sans', sans-serif; }
+    /* line 45, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+    body #wrapper aside {
+      width: 15%;
+      height: 100%;
+      background-color: white; }
+      /* line 50, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+      body #wrapper aside a {
+        width: 100%; }
+        /* line 52, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+        body #wrapper aside a img {
+          width: 100%; }
+      /* line 56, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+      body #wrapper aside h1 {
+        text-align: center;
+        color: #6B9814; }
 
 /*# sourceMappingURL=style.css.map */

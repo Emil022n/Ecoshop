@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
 </head>
 <body>
   <div id="wrapper">
+    <aside>
+      <a href="index.php"><img src="img/logo2.jpg" alt="ØKOshop logo"></a>
+      <h1><span style="color:#A1C65D;">ØKO</span>shop.<span style="color:#6B9814; font-size: 2em;"><br>DK</span></h1>
+    </aside>
     <header>
       <div id="headerCont">
         <div id="headerIcons">
@@ -32,7 +37,6 @@
         <a href="#">Log ind</a>
       </nav>
     </header>
-    <aside></aside>
     <main></main>
     <footer></footer>
   </div>
