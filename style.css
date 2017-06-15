@@ -1,9 +1,28 @@
-/* line 1, C:/wamp64/www/ecoshop/style.scss */
+/* line 1, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+a {
+  text-decoration: none;
+  color: black; }
+
+/* line 6, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
 body {
-  background-image: url(img/bg.png); }
-  /* line 4, C:/wamp64/www/ecoshop/style.scss */
+  background-image: url(img/bg.png);
+  display: flex;
+  justify-content: center; }
+  /* line 11, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
   body #wrapper {
     width: 70%;
     background-color: #F0F3BD; }
+    /* line 17, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+    body #wrapper header #headerCont {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5em; }
+    /* line 22, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+    body #wrapper header img {
+      width: 100%; }
+    /* line 26, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+    body #wrapper header nav {
+      display: flex;
+      justify-content: space-around; }
 
 /*# sourceMappingURL=style.css.map */

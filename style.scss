@@ -1,9 +1,33 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   background-image: url(img/bg.png);
+  display: flex;
+  justify-content: center;
   
   #wrapper {
     width:  70%;
     background-color: #F0F3BD;
+    
+    header{
+      
+      #headerCont {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em;
+      }
+      img {
+        width: 100%;
+      }
+      
+      nav {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
   }
 }
 
