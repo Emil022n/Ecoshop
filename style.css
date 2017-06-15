@@ -1,0 +1,9 @@
+/* line 1, C:/wamp64/www/ecoshop/style.scss */
+body {
+  background-image: url(img/bg.png); }
+  /* line 4, C:/wamp64/www/ecoshop/style.scss */
+  body #wrapper {
+    width: 70%;
+    background-color: #F0F3BD; }
+
+/*# sourceMappingURL=style.css.map */
