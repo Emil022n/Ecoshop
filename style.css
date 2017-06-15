@@ -1,53 +1,86 @@
-/* line 1, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+/* line 1, C:/wamp64/www/ecoshop/style.scss */
 a {
   text-decoration: none;
   color: black; }
 
-/* line 6, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+/* line 6, C:/wamp64/www/ecoshop/style.scss */
+h1 {
+  margin: 0; }
+
+/* line 10, C:/wamp64/www/ecoshop/style.scss */
+hr {
+  width: 100%; }
+
+/* line 13, C:/wamp64/www/ecoshop/style.scss */
 body {
   background-image: url(img/bg.png);
   display: flex;
   justify-content: center; }
-  /* line 11, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
+  /* line 18, C:/wamp64/www/ecoshop/style.scss */
   body #wrapper {
     display: flex;
     width: 80%;
-    background-color: #F0F3BD; }
-    /* line 16, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-    body #wrapper header {
-      width: 85%; }
-      /* line 19, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-      body #wrapper header #headerCont {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.5em; }
-        /* line 26, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-        body #wrapper header #headerCont #headerCart a {
-          font-family: 'Open Sans', sans-serif; }
-      /* line 31, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-      body #wrapper header img {
-        width: 100%; }
-      /* line 35, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-      body #wrapper header nav {
+    background-color: #F0F3BD;
+    flex-direction: column; }
+    /* line 26, C:/wamp64/www/ecoshop/style.scss */
+    body #wrapper header #headerCont {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5em; }
+      /* line 33, C:/wamp64/www/ecoshop/style.scss */
+      body #wrapper header #headerCont #headerCart a {
+        font-family: 'Open Sans', sans-serif; }
+    /* line 38, C:/wamp64/www/ecoshop/style.scss */
+    body #wrapper header img {
+      width: 100%; }
+    /* line 42, C:/wamp64/www/ecoshop/style.scss */
+    body #wrapper header nav {
+      display: flex;
+      justify-content: space-around; }
+      /* line 46, C:/wamp64/www/ecoshop/style.scss */
+      body #wrapper header nav a {
+        font-family: 'Open Sans', sans-serif; }
+    /* line 51, C:/wamp64/www/ecoshop/style.scss */
+    body #wrapper main {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      /* line 56, C:/wamp64/www/ecoshop/style.scss */
+      body #wrapper main #mainCont1 {
+        width: 43%; }
+        /* line 59, C:/wamp64/www/ecoshop/style.scss */
+        body #wrapper main #mainCont1 p {
+          margin-left: 10px; }
+      /* line 63, C:/wamp64/www/ecoshop/style.scss */
+      body #wrapper main #mainCont2 {
+        width: 13%;
+        text-align: center; }
+        /* line 69, C:/wamp64/www/ecoshop/style.scss */
+        body #wrapper main #mainCont2 h1 {
+          margin: 0;
+          color: #6B9814; }
+      /* line 74, C:/wamp64/www/ecoshop/style.scss */
+      body #wrapper main #mainCont3 {
+        width: 43%; }
+        /* line 77, C:/wamp64/www/ecoshop/style.scss */
+        body #wrapper main #mainCont3 p {
+          margin-left: 10px; }
+    /* line 82, C:/wamp64/www/ecoshop/style.scss */
+    body #wrapper section {
+      text-align: center; }
+      /* line 86, C:/wamp64/www/ecoshop/style.scss */
+      body #wrapper section p {
+        font-weight: bold; }
+      /* line 89, C:/wamp64/www/ecoshop/style.scss */
+      body #wrapper section .productCont {
         display: flex;
         justify-content: space-around; }
-        /* line 39, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-        body #wrapper header nav a {
-          font-family: 'Open Sans', sans-serif; }
-    /* line 45, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-    body #wrapper aside {
-      width: 15%;
-      height: 100%;
-      background-color: white; }
-      /* line 50, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-      body #wrapper aside a {
-        width: 100%; }
-        /* line 52, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-        body #wrapper aside a img {
-          width: 100%; }
-      /* line 56, C:/wamp64/www/ecoshop/Ecoshop/style.scss */
-      body #wrapper aside h1 {
-        text-align: center;
-        color: #6B9814; }
+        /* line 93, C:/wamp64/www/ecoshop/style.scss */
+        body #wrapper section .productCont .products {
+          flex-basis: 32%;
+          background-color: white; }
+          /* line 97, C:/wamp64/www/ecoshop/style.scss */
+          body #wrapper section .productCont .products img {
+            width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
