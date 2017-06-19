@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   
-  #wrapper {
+  .wrapper {
     display: flex;
     width:  80%;
     background-color: #F0F3BD;
@@ -81,25 +81,80 @@ body {
     }
     section {
       
-      text-align: center;
       
-      p {
-          font-weight: bold;
+      .pHead {
+        font-weight: bold;
+        font-size: 1.5em;  
+        text-align: center;
       }
+      
       .productCont {
         display: flex;
         justify-content: space-around;
-        
+    
         .products{
           flex-basis: 32%;
           background-color: white;
+          margin-bottom: 10px;
           
           img{
             width: 100%;
           }
+          
+          .pHead2 {
+            font-weight: bold;
+            font-size: 1.2em;
+          }
+          p {
+            margin: 5px;
+          }
+          .priceCont {
+            width: 100%;
+            background-color: #6B9814;
+            text-align: center;
+            P {
+              font-size: 1.8em;
+              color: white;
+            }
+          }
+          .buttonCont {
+            display: flex;
+            justify-content: space-around;
+            
+            button {
+            background-color: #6B9814;
+            color: white;
+            width: 8em;
+            border-radius: 2px;
+            border: none;
+            margin-bottom: 10px;
+            height: 2em;
+            }
+          }
         }
       }
     }
+    footer {
+      background-color: white;
+      display: flex;
+      justify-content: space-around;
+    
+      .footerCont {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+      
+      }
+      .footerNewsletter {
+        display: flex;
+        flex-direction: column;
+      }
+    } 
+  }
+  .footerBottom {
+    width: 100%;
+    background-color: white;
+    text-align: center;
   }
 }
 

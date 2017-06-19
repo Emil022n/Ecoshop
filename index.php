@@ -9,7 +9,7 @@
 </head>
 <body>
  <script src="https://use.fontawesome.com/d333651ce6.js"></script> 
-  <div id="wrapper">
+  <div class="wrapper">
     <header>
       <div id="headerCont">
         <div id="headerIcons">
@@ -31,7 +31,7 @@
         <a href="#">Garanti</a>
         <a href="#">Om os</a>
         <a href="#">Kontakt</a>
-        <a href="#">Log ind</a>
+        <a href="logIndSide.php">Log ind</a>
       </nav>
     </header>
     <main>
@@ -47,30 +47,74 @@
       </div>
     </main>
     <section>
-      <p>Nyeste produkter:</p>
+      <p class="pHead">Nyeste produkter:</p>
       <hr>
       <div class="productCont">
         <div class="products">
           <img src="img/1.jpg" alt="Lilla sæbe">
-          <p>Økologisk hånd/body lotion</p>
+          <p class="pHead2">Økologisk hånd/body lotion</p>
+          <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quis molestiae cum nihil fugit dicta officiis, consequatur, blanditiis ab animi aspernatur quisquam pariatur reiciendis. Nobis sunt est eveniet eum voluptate!</p>
+          <div class="priceCont"><p>Pris: 200kr.</p></div>
+          <p>Published: 02-08-1993</p>
+          <div class="buttonCont">
+            <button type="button">Køb</button>
+          </div>
         </div>
         <div class="products">
-          <img src="img/2.jpg" alt="Lilla sæbe">
-          <p>Økologisk hånd/body lotion</p>
+          <img src="img/2.jpg" alt="Økologisk bodylotion">
+          <p class="pHead2">Økologisk hånd/body lotion</p>
+          <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quis molestiae cum nihil fugit dicta officiis, consequatur, blanditiis ab animi aspernatur quisquam pariatur reiciendis. Nobis sunt est eveniet eum voluptate!</p>
+          <div class="priceCont"><p>Pris: 800kr.</p></div>
+          <p>Published: 06-03-1975</p>
+          <div class="buttonCont">
+            <button type="button">Køb</button>
+          </div>
         </div>
         <div class="products">
-          <img src="img/3.jpg" alt="Lilla sæbe">
-          <p>Økologisk hånd/body lotion</p>
+          <img src="img/3.jpg" alt="Grøn bodylotion">
+          <p class="pHead2">Økologisk hånd/body lotion</p>
+          <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quis molestiae cum nihil fugit dicta officiis, consequatur, blanditiis ab animi aspernatur quisquam pariatur reiciendis. Nobis sunt est eveniet eum voluptate!</p>
+          <div class="priceCont"><p>Pris: 180kr.</p></div>
+          <p>Published: 01-01-1970</p>
+          <div class="buttonCont">
+            <button type="button">Køb</button>
+          </div>
         </div>
       </div>
     </section>
-    
+    <footer>
+      <div class="footerCont">
+        <a href="#">Kundeservice</a>
+        <a href="#">Handelsbetingelser</a>
+        <a href="#">Frisk frugt</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footerCont">
+        <a href="#">Presse</a>
+        <a href="#">Kontakt</a>
+      <a href="#">Følg os</a>
+        <div class="footerIcons">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="footerNewsletter">
+       <p>Nyhedsbrev</p>
+          <input type="text" placeholder="Fornavn">
+          <input type="text" placeholder="Efternavn">
+          <input type="text" placeholder="Email">
+          <button type="button">Tilmeld</button>
+      </div>
+    </footer>
+    <div class="footerBottom">
+      <p>ØKOshop.DK - Grønnevænget 42, 1234 brædstrup</p>
+      <p>- lavet af Emil J Petersen!</p>
+    </div>
   </div>
-
-  <footer></footer>
-  
 </body>
 </html>
