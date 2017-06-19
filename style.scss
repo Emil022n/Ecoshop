@@ -20,9 +20,9 @@ body {
     width:  80%;
     background-color: #F0F3BD;
     flex-direction: column;
+    
     header{
      
-      
       #headerCont {
         display: flex;
         justify-content: space-between;
@@ -37,14 +37,21 @@ body {
       }
       img {
         width: 100%;
+        margin-bottom: 0;
       }
       
       nav {
         display: flex;
         justify-content: space-around;
+        text-align: center;
+        margin-top: 0;
         
         a {
           font-family: 'Open Sans', sans-serif;
+          
+        }
+        a:hover {
+          font-weight: bold;
         }
       }
     }
@@ -52,8 +59,59 @@ body {
       display: flex;
       flex-direction: row;
       align-items: center;
+      justify-content: center;
       
-      #mainCont1 {
+      #opretCont {
+        display: flex;
+        flex-direction: column;
+        
+        #opretToggle {
+          background-color: #6B9814;
+          color: white;
+          width: 100%;
+          border-radius: 2px;
+          border: none;
+          margin: 10px;
+          height: 2em;
+        }
+        #opret {
+          margin-bottom: 2em;
+          
+          form {
+            
+            .opretForm {
+              margin: 20px;
+              
+              textarea {
+                display: block;
+                margin: 1em 0em;
+                border-radius: 2px;
+                padding-left: 5px;
+                
+              }
+              input {
+                display: block;
+                margin: 1em 0em;
+                border-radius: 2px;
+                padding: 10px;
+                border: none;
+                width: 100%;
+              }
+              .opretBtn {
+                background-color: #6B9814;
+                color: white;
+                width: 100%;
+                border-radius: 2px;
+                border: none;
+                margin-bottom: 10px;
+                height: 100%;
+                padding: 10px;
+              }
+            }
+          }
+        }
+      }
+      .mainCont {
         width: 43%;
         
         p {
@@ -71,14 +129,8 @@ body {
           color:#6B9814; 
         }
       }
-      #mainCont3 {
-        width: 43%;
-        
-        p {
-          margin-left: 10px;
-        }
-      }
     }
+  }
     section {
       
       
@@ -156,6 +208,6 @@ body {
     background-color: white;
     text-align: center;
   }
-}
+
 
 
