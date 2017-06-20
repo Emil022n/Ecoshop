@@ -1,3 +1,8 @@
+ <?php 
+  session_start();
+  
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +40,20 @@
         <a href="#">Garanti</a>
         <a href="#">Om os</a>
         <a href="#">Kontakt</a>
-        <a href="logIndSide.php">Log ind</a>
+        <?php
+          if(isset($_SESSION['userName']) && !empty($_SESSION['userName'])){
+            echo "<a href='../php/logOut.php'>Log ud</a>";
+          }
+          else {
+            echo "<a href='logIndSide.php'>Log ind</a>";
+          }
+        ?>
+        
       </nav>
+      <?php 
+       if(isset($_SESSION['userName'])){
+        echo "<p id='welcomeMsg'> Velkommen ".$_SESSION['userName']."</p>";
+       
+       }
+      ?>
     </header>

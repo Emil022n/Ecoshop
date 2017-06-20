@@ -1,26 +1,29 @@
 
  <?php
-  $formUsername = $_POST['formUsername'];
-  $formPassword = $_POST['formPassword'];
+  $formUsername = $_POST['userName'];
+  $formPassword = $_POST['password'];
   
   require_once "connect.php";
-  $statement = $dbh->prepare("SELECT * FROM users WHERE dbUsername = ? AND dbPassword = ?");
+  $statement = $dbh->prepare("SELECT * FROM users WHERE userName = ? AND password = ?");
   $statement->bindParam(1, $formUsername);
   $statement->bindParam(2, $formPassword);
   $statement->execute();
 
-  if(empty($statement->fetch()) ){
-    // Brugeren har indtastet forkert login
-
-    header("Refresh:1;url=http://http://localhost/ecoshop/Sider/logIndSide.php", true, 303);
-        ?>
-    <script type="text/javascript">
-      window.alert("Wrong Login")
-    </script>
-    <?php
-  } else {
-    // brugeren har indtastet korrekt login
+  if($row = $statement->fetch()) {
+    // Brugeren har indtastet korrekt login
     echo "CONGLATURATION";
+    session_start();
+    
+    $_SESSION['userName'] = $row['userName'];
+    $_SESSION['password'] = $row['password'];
+    header("Refresh:1;url=http://localhost/ecoshop/sider/logIndSide.php", true, 303);
+
+    
+  } else {
+    // brugeren har indtastet forkert login
+        header("Refresh:1;url=http://localhost/ecoshop/sider/logIndSide.php", true, 303);
+        echo "Login fejlede";
+
   }
   $dbh = null;
 ?>

@@ -45,6 +45,7 @@ body {
         justify-content: space-around;
         text-align: center;
         margin-top: 0;
+        margin-bottom: 10px;
         
         a {
           font-family: 'Open Sans', sans-serif;
@@ -53,6 +54,11 @@ body {
         a:hover {
           font-weight: bold;
         }
+      }
+      #welcomeMsg {
+        text-align: center;
+        color: #A1C65D;
+        font-family: 'Lato', sans-serif;
       }
     }
     main {
@@ -65,15 +71,6 @@ body {
         display: flex;
         flex-direction: column;
         
-        #opretToggle {
-          background-color: #6B9814;
-          color: white;
-          width: 100%;
-          border-radius: 2px;
-          border: none;
-          margin: 10px;
-          height: 2em;
-        }
         #opret {
           margin-bottom: 2em;
           
@@ -82,6 +79,9 @@ body {
             .opretForm {
               margin: 20px;
               
+              label {
+                font-family: 'Lato', sans-serif;
+              }
               textarea {
                 display: block;
                 margin: 1em 0em;
@@ -104,7 +104,7 @@ body {
                 border-radius: 2px;
                 border: none;
                 margin-bottom: 10px;
-                height: 100%;
+                
                 padding: 10px;
               }
             }
@@ -112,21 +112,41 @@ body {
         }
       }
       .mainCont {
+        display: flex;
+        justify-content: space-between;
         width: 43%;
         
         p {
-          margin-left: 10px;
+          margin: 10px;
+          font-family: 'Lato', sans-serif;
+        }
+        
+
+        
+      }
+      .mainContLogin {
+        display: flex;
+        justify-content: center;
+        
+        form input {
+          display: block;
+          margin: 1em 0em;
+          border-radius: 2px;
+          padding: 10px;
+          border: none;
+          width: 100%;
         }
       }
       #mainCont2 {
-        width: 13%;
+        
         text-align: center;
         img {
           
         }
         h1 {
           margin: 0;
-          color:#6B9814; 
+          color:#6B9814;
+          font-family: 'Lato', sans-serif;
         }
       }
     }
@@ -138,6 +158,7 @@ body {
         font-weight: bold;
         font-size: 1.5em;  
         text-align: center;
+        font-family: 'Lato', sans-serif;
       }
       
       .productCont {
@@ -157,15 +178,18 @@ body {
           .pHead2 {
             font-weight: bold;
             font-size: 1.2em;
+            font-family: 'Lato', sans-serif;
           }
           p {
             margin: 5px;
+            font-family: 'Lato', sans-serif;
           }
           .priceCont {
             width: 100%;
             background-color: #6B9814;
             text-align: center;
             P {
+              font-family: 'Open Sans', sans-serif;
               font-size: 1.8em;
               color: white;
             }
@@ -196,11 +220,20 @@ body {
         display: flex;
         flex-direction: column;
         margin: 10px;
-      
+        i {
+          color: #A1C65D;
+        }
+        a {
+          font-family: 'Open Sans', sans-serif;
+        }
       }
       .footerNewsletter {
         display: flex;
         flex-direction: column;
+        
+        p {
+          font-family: 'Open Sans', sans-serif;
+        }
       }
     } 
   }
@@ -208,6 +241,9 @@ body {
     width: 100%;
     background-color: white;
     text-align: center;
+    p {
+      font-family: 'Open Sans', sans-serif;
+    }
   }
 
 

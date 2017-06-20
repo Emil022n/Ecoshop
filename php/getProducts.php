@@ -13,7 +13,10 @@
          <hr>
           <p><?php echo $row['content']; ?></p>
           <div class="priceCont"><p>Pris: <?php echo $row['price']; ?>kr.</p></div>
-          <p>Udgivet: <?php echo $row['published']; ?></p>
+          <p>Udgivet: <?php 
+            setlocale(LC_TIME, array('da_DA.UTF-8', 'da_DA@euro','da_DA','danish'));
+            echo strftime("%A %d. %B", $row['published']);
+             ?></p>
           <div class="buttonCont">
             <button type="button">Køb</button>
           </div>

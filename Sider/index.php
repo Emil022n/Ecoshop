@@ -1,5 +1,8 @@
 
-    <?php require "header.php";?>
+    <?php 
+      
+      require "header.php";
+    ?>
     <main>
      <div class="mainCont">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate a tempora, molestias non blanditiis odit rerum quam suscipit iusto, odio magnam nisi veniam accusantium exercitationem harum, quibusdam eveniet perferendis at.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil itaque harum distinctio corporis, earum animi commodi. Quod odit rem ipsa eveniet corporis rerum, provident itaque libero laudantium blanditiis culpa nesciunt.</p>
